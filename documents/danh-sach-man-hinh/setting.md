@@ -9,3 +9,5 @@ description: Từ module setting (src/core/modules/setting)
 Url: /setting
 
 UIType: setting\_main
+
+Mở ở menu avatar
