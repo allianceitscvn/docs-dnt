@@ -1,5 +1,5 @@
 ---
-description: Base của source
+description: Base của source (src/core)
 ---
 
 # Core
