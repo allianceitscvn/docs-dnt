@@ -20,8 +20,14 @@ Các props nhận vào
 
 Các functions trong component này
 
-| Function          | Mô tả                                               |
-| ----------------- | --------------------------------------------------- |
-| componentDidMount | <ul><li>Thay đổi title header và browser </li></ul> |
-|                   |                                                     |
-|                   |                                                     |
+| Function                 | Mô tả                                                                                                                                                                     |
+| ------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| componentDidMount        | <ul><li>Thay đổi title header và browser</li><li>Khởi tạo reload event</li><li>Xử lý data ban đầu</li></ul>                                                               |
+| initFirst                | <ul><li>Nếu có firstProps thì update data đó vào page</li><li>Ngược lại gọi request first</li></ul>                                                                       |
+| forceReloadList          | Overwrite từ PageExt, xử lý các reload khi có tín hiệu                                                                                                                    |
+| reloadSelf               | <p>Xử lý reload những row parent (các row expand đang mở)</p><ul><li>Tìm các row cần reload dựa vào các key ở local</li><li>Gọi hàm reload lại các row tìm được</li></ul> |
+| getUpdateTitleScreen     | Lấy config có cập nhật title không từ configPage                                                                                                                          |
+| getIsShowLoadingFullPage | Lấy config có show loading full page không hay chỉ load vùng nó đang hiển thị thôi                                                                                        |
+| getFnList                | Lấy danh sách các functions                                                                                                                                               |
+| Các hàm render...        | Render các component                                                                                                                                                      |
+
